@@ -1,8 +1,6 @@
 import { pick } from 'lodash-es'
-import {type TextDefaultProps, type ImageComponentProps } from '@/defaultProps'
-
-const useComponentCommon = <T extends (TextDefaultProps | ImageComponentProps)>(
-  props: Readonly<Partial<T>>,
+const useComponentCommon = (
+  props: any,
   picks: string[]
 ) => {
   const styleProps: any = pick(props, picks)
