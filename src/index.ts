@@ -1,12 +1,14 @@
+import type { App } from 'vue'
+
 import LText from './components/LText'
 import LImage from './components/LImage'
 import LShape from './components/LShape'
 import FinalPage from './components/FinalPage'
-const components = [LText, LImage, LShape, FinalPage]
+const components = {LText, LImage, LShape, FinalPage}
 
-const install = (app: any) => {
-  components.map((component) => {
-    app.use(component)
+const install = (app: App) => {
+  Object.keys(components).forEach((key) => {
+    app.component(key, components[key])
   })
 }
 

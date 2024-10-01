@@ -1,5 +1,9 @@
+import { App } from 'vue'
 import LImage from './LImage.vue'
-LImage.install = (app: any) => {
+LImage.install = (app: App) => {
+  if (!LImage.name) {
+    return
+  }
   app.component(LImage.name, LImage)
 }
 
