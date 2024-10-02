@@ -1,6 +1,6 @@
 {
   "name": "p-test-comp",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": false,
   "type": "module",
   "main": "dist/p-test-comp.umd.js",
@@ -9,20 +9,25 @@
   "scripts": {
     "dev": "vite",
     "preview": "vite preview",
-    "test:unit": "vitest",
+    "test:unit": "vitest --watch false",
     "build-only": "vite build",
     "type-check": "vue-tsc --build --force",
-    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore --max-warnings 5",
     "format": "prettier --write src/",
     "clean": "rimraf ./dist",
     "build": "npm run clean && npm run build:esm && npm run build:umd",
     "build:esm": "rollup --config build/rollup.esm.config.ts --configPlugin typescript",
-    "build:umd": "rollup --config build/rollup.umd.config.ts --configPlugin typescript"
+    "build:umd": "rollup --config build/rollup.umd.config.ts --configPlugin typescript",
+    "prepublishOnly": "npm run lint && npm run test:unit && npm run build",
+    "prepare": "husky"
   },
   "dependencies": {
     "lodash-es": "^4.17.21",
     "pinia": "^2.1.7"
   },
+  "files": [
+    "dist"
+  ],
   "peerDependencies": {
     "vue": "^3.4.29"
   },
@@ -45,6 +50,7 @@
     "cssnano": "^7.0.6",
     "eslint": "^8.57.0",
     "eslint-plugin-vue": "^9.23.0",
+    "husky": "^9.1.6",
     "jsdom": "^24.1.0",
     "npm-run-all2": "^6.2.0",
     "prettier": "^3.2.5",
