@@ -14,5 +14,4 @@ const useComponentCommon = (
     handleClick
   }
 }
-
 export default useComponentCommon
