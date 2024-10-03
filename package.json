@@ -9,7 +9,7 @@
   "scripts": {
     "dev": "vite",
     "preview": "vite preview",
-    "test:unit": "vitest --watch false",
+    "test": "vitest --watch false",
     "build-only": "vite build",
     "type-check": "vue-tsc --build --force",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore --max-warnings 5",
@@ -18,7 +18,7 @@
     "build": "npm run clean && npm run build:esm && npm run build:umd",
     "build:esm": "rollup --config build/rollup.esm.config.ts --configPlugin typescript",
     "build:umd": "rollup --config build/rollup.umd.config.ts --configPlugin typescript",
-    "prepublishOnly": "npm run lint && npm run test:unit && npm run build",
+    "prepublishOnly": "npm run lint && npm run test && npm run build",
     "prepare": "husky",
     "commitlint": "commitlint --edit"
   },
