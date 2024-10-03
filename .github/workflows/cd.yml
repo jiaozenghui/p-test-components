@@ -6,7 +6,7 @@ on:
       - "v*.*.*"   
 
 jobs:
-  run publish:
+  run-publish:
     steps:
       - uses: actions/checkout@v3
   
