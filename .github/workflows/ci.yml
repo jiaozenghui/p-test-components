@@ -5,7 +5,7 @@ on:
     branches: [ main ]
  
 jobs:
-  run test before test:
+  run publish before test:
     runs-on: ubuntu-latest
  
     steps:
