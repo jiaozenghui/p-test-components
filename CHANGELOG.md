@@ -1,5 +1,12 @@
 
 
+# [2.3.0](https://github.com/jiaozenghui/p-test-components/compare/v2.2.2...v2.3.0) (2024-10-04)
+
+
+### Features
+
+* 🎸 complete test units ([86d3c5b](https://github.com/jiaozenghui/p-test-components/commit/86d3c5bde6944deebd7a7f166e28c8e48d57fed3))
+
 ## [2.2.2](https://github.com/jiaozenghui/p-test-components/compare/v2.2.0...v2.2.2) (2024-10-04)
 
 ## [2.2.1](https://github.com/jiaozenghui/p-test-components/compare/v2.2.0...v2.2.1) (2024-10-04)
