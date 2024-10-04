@@ -20,7 +20,9 @@
     "build:umd": "rollup --config build/rollup.umd.config.ts --configPlugin typescript",
     "prepublishOnly": "npm run lint && npm run test && npm run build",
     "prepare": "husky",
-    "commitlint": "commitlint --edit"
+    "commitlint": "commitlint --edit",
+    "release": "release-it",
+    "commit": "git-cz"
   },
   "dependencies": {
     "lodash-es": "^4.17.21",
@@ -35,6 +37,7 @@
   "devDependencies": {
     "@commitlint/cli": "^19.5.0",
     "@commitlint/config-conventional": "^19.5.0",
+    "@release-it/conventional-changelog": "^8.0.2",
     "@rollup/plugin-json": "^6.1.0",
     "@rollup/plugin-node-resolve": "^15.3.0",
     "@rollup/plugin-typescript": "^12.1.0",
@@ -53,10 +56,12 @@
     "cssnano": "^7.0.6",
     "eslint": "^8.57.0",
     "eslint-plugin-vue": "^9.23.0",
+    "git-cz": "^4.9.0",
     "husky": "^9.1.6",
     "jsdom": "^24.1.0",
     "npm-run-all2": "^6.2.0",
     "prettier": "^3.2.5",
+    "release-it": "^17.6.0",
     "rollup": "^4.22.5",
     "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-typescript2": "^0.36.0",
