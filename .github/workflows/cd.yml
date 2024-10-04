@@ -16,7 +16,19 @@ jobs:
         with:
           node-version: '20'
           registry-url: https://registry.npmjs.org/ 
+
+      # 依赖缓存策略
+      - name: Cache
+        id: cache-dependencies
+        uses: actions/cache@v3
+        with:
+          path: |
+            **/node_modules
+          key: ${{runner.OS}}-${{hashFiles('**/package-lock.json')}}
+
+
       - name: Install Dependencies
+        if: steps.cache-dependencies.outputs.cache-hit != 'true'
         run: npm install
 
       - name: Run Publish
