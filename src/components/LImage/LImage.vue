@@ -1,6 +1,6 @@
 <template>
     <img class="l-image-component" :style="prop.styleProps" :src="props.imgSrc" @click="prop.handleClick" /></template>
-<script setup lang="ts" name="LText">
+<script setup lang="ts" name="LImage">
 import { computed } from 'vue'
 import { defaultImageProps, shapeStylePropNames, isEditingProp } from '@/defaultProps'
 import useComponentCommon from '@/hooks/useComponentCommon'
