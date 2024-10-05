@@ -1,5 +1,12 @@
 
 
+## [2.3.1](https://github.com/jiaozenghui/p-test-components/compare/v2.3.0...v2.3.1) (2024-10-05)
+
+
+### Bug Fixes
+
+* 🐛 l-image bug fix ([3941b49](https://github.com/jiaozenghui/p-test-components/commit/3941b49c50589a62fa449dcc138418b291866d19))
+
 # [2.3.0](https://github.com/jiaozenghui/p-test-components/compare/v2.2.2...v2.3.0) (2024-10-04)
 
 
