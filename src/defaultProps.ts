@@ -180,3 +180,4 @@ export interface PageData {
   author?: string
   status?: string
 }
+export type AllComponentProps = TextDefaultProps & ImageComponentProps & ShapeComponentProps
