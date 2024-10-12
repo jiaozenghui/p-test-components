@@ -1,0 +1,38 @@
+name: Continuous Publish
+
+on:
+  push:
+    tags:
+      - "v*.*.*"   
+
+jobs:
+  run-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+  
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+          registry-url: https://registry.npmjs.org/ 
+
+      # 依赖缓存策略
+      - name: Cache
+        id: cache-dependencies
+        uses: actions/cache@v3
+        with:
+          path: |
+            **/node_modules
+          key: ${{runner.OS}}-${{hashFiles('**/package-lock.json')}}
+
+
+      - name: Install Dependencies
+        if: steps.cache-dependencies.outputs.cache-hit != 'true'
+        run: npm install
+
+      - name: Run Publish
+        run: npm publish
+        env:
+          # NPM_TOKEN is access token
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

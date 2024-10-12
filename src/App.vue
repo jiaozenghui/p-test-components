@@ -5,7 +5,7 @@ export interface TestProps {
 }
 export default defineComponent({name: 'App'})
 </script>
-<style>
+<style lang="scss">
 #app {
   font-size: 12px;
 }

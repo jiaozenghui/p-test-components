@@ -1,28 +1,44 @@
 {
-  "name": "vue-project",
-  "version": "0.0.0",
+  "name": "p-test-comp",
+  "version": "2.3.1",
   "private": false,
   "type": "module",
+  "main": "dist/p-test-comp.umd.js",
+  "module": "dist/p-test-comp.esm.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "dev": "vite",
-    "build": "run-p type-check \"build-only {@}\" --",
     "preview": "vite preview",
-    "test:unit": "vitest",
+    "test": "vitest --watch false",
     "build-only": "vite build",
     "type-check": "vue-tsc --build --force",
-    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore --max-warnings 5",
     "format": "prettier --write src/",
-    "build:esm": "rollup --config build/rollup.config.js"
+    "clean": "rimraf ./dist",
+    "build": "npm run clean && npm run build:esm && npm run build:umd",
+    "build:esm": "rollup --config build/rollup.esm.config.ts --configPlugin typescript",
+    "build:umd": "rollup --config build/rollup.umd.config.ts --configPlugin typescript",
+    "prepublishOnly": "npm run lint && npm run test && npm run build",
+    "prepare": "husky",
+    "commitlint": "commitlint --edit",
+    "release": "release-it",
+    "commit": "git-cz"
   },
   "dependencies": {
     "lodash-es": "^4.17.21",
-    "pinia": "^2.1.7",
-    "vue": "^3.4.29"
+    "pinia": "^2.1.7"
   },
+  "files": [
+    "dist"
+  ],
   "peerDependencies": {
     "vue": "^3.4.29"
   },
   "devDependencies": {
+    "@commitlint/cli": "^19.5.0",
+    "@commitlint/config-conventional": "^19.5.0",
+    "@release-it/conventional-changelog": "^8.0.2",
+    "@rollup/plugin-json": "^6.1.0",
     "@rollup/plugin-node-resolve": "^15.3.0",
     "@rollup/plugin-typescript": "^12.1.0",
     "@rushstack/eslint-patch": "^1.8.0",
@@ -36,20 +52,25 @@
     "@vue/eslint-config-typescript": "^13.0.0",
     "@vue/test-utils": "^2.4.6",
     "@vue/tsconfig": "^0.5.1",
+    "autoprefixer": "^10.4.20",
+    "cssnano": "^7.0.6",
     "eslint": "^8.57.0",
     "eslint-plugin-vue": "^9.23.0",
+    "git-cz": "^4.9.0",
+    "husky": "^9.1.6",
     "jsdom": "^24.1.0",
     "npm-run-all2": "^6.2.0",
     "prettier": "^3.2.5",
-    "rollup": "latest",
-    "rollup-plugin-css-only": "latest",
+    "release-it": "^17.6.0",
+    "rollup": "^4.22.5",
+    "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-typescript2": "^0.36.0",
-    "rollup-plugin-vue": "latest",
-    "tslib": "^2.7.0",
+    "rollup-plugin-vue": "^6.0.0",
+    "sass": "^1.79.4",
     "typescript": "~5.4.0",
     "vite": "^5.3.1",
     "vitest": "^1.6.0",
-    "vue": "^3.5.9",
+    "vue": "^3.4.29",
     "vue-tsc": "^2.0.21"
   }
 }
