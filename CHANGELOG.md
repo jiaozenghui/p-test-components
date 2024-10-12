@@ -1,5 +1,12 @@
 
 
+# [2.4.0](https://github.com/jiaozenghui/p-test-components/compare/v2.3.1...v2.4.0) (2024-10-12)
+
+
+### Features
+
+* add new type ([841350d](https://github.com/jiaozenghui/p-test-components/commit/841350d920c7c3a4abe6271e6d46e53ef0cc01ea))
+
 ## [2.3.1](https://github.com/jiaozenghui/p-test-components/compare/v2.3.0...v2.3.1) (2024-10-05)
 
 
