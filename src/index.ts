@@ -1,5 +1,5 @@
 import type { App } from 'vue'
-export { type AllComponentProps } from './defaultProps'
+export type { AllComponentProps } from './defaultProps'
 
 import LText from './components/LText'
 import LImage from './components/LImage'
