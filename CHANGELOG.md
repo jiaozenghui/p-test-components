@@ -1,5 +1,12 @@
 
 
+## [2.5.2](https://github.com/jiaozenghui/p-test-components/compare/v2.5.1...v2.5.2) (2024-10-13)
+
+
+### Bug Fixes
+
+* fix npm run test bug ([eafc58e](https://github.com/jiaozenghui/p-test-components/commit/eafc58e5b11c7d3fe43b39ef3344716f0330af08))
+
 ## [2.5.1](https://github.com/jiaozenghui/p-test-components/compare/v2.5.0...v2.5.1) (2024-10-12)
 
 
