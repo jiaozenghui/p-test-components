@@ -1,5 +1,5 @@
 import type { App } from 'vue'
-import { AllComponentProps } from './defaultProps'
+export * from './defaultProps'
 
 import LText from './components/LText'
 import LImage from './components/LImage'
@@ -13,7 +13,7 @@ const install = (app: App) => {
   })
 }
 
-export { install, LText, LImage, LShape, FinalPage, type AllComponentProps }
+export { install, LText, LImage, LShape, FinalPage }
 
 export default {
   install
