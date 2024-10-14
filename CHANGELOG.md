@@ -1,5 +1,12 @@
 
 
+# [2.8.0](https://github.com/jiaozenghui/p-test-components/compare/v2.7.0...v2.8.0) (2024-10-14)
+
+
+### Features
+
+* inline edit click outside hooks ([72d7a9d](https://github.com/jiaozenghui/p-test-components/commit/72d7a9de50f0ce194d38cc40bdb4bf7a0710a8cd))
+
 # [2.7.0](https://github.com/jiaozenghui/p-test-components/compare/v2.6.0...v2.7.0) (2024-10-13)
 
 
