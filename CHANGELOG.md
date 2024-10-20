@@ -1,5 +1,12 @@
 
 
+# [2.10.0](https://github.com/jiaozenghui/p-test-components/compare/v2.9.0...v2.10.0) (2024-10-20)
+
+
+### Features
+
+* build test ([5c780de](https://github.com/jiaozenghui/p-test-components/commit/5c780ded9b3b852e7be8c3837e55a5798a13a348))
+
 # [2.9.0](https://github.com/jiaozenghui/p-test-components/compare/v2.8.1...v2.9.0) (2024-10-20)
 
 
