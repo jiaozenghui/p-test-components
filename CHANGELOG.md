@@ -1,5 +1,12 @@
 
 
+# [2.9.0](https://github.com/jiaozenghui/p-test-components/compare/v2.8.1...v2.9.0) (2024-10-20)
+
+
+### Features
+
+* build test ([fcd36a0](https://github.com/jiaozenghui/p-test-components/commit/fcd36a0e56b911d00c2e63ca703f28ae24aad505))
+
 ## [2.8.1](https://github.com/jiaozenghui/p-test-components/compare/v2.8.0...v2.8.1) (2024-10-19)
 
 # [2.8.0](https://github.com/jiaozenghui/p-test-components/compare/v2.7.0...v2.8.0) (2024-10-14)
