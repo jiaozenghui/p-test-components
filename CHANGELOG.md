@@ -1,5 +1,12 @@
 
 
+## [2.10.3](https://github.com/jiaozenghui/p-test-components/compare/v2.10.2...v2.10.3) (2024-10-20)
+
+
+### Bug Fixes
+
+* umd ([d79fe10](https://github.com/jiaozenghui/p-test-components/commit/d79fe108d70eece69b32724e0a22c6a87eb2ea91))
+
 ## [2.10.2](https://github.com/jiaozenghui/p-test-components/compare/v2.10.1...v2.10.2) (2024-10-20)
 
 
