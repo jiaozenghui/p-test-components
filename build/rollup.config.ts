@@ -25,6 +25,7 @@ export default defineConfig({
     file: file('esm'),
     format: 'es'
   },
+
   plugins: [
     json(),
     nodeResolve(),
