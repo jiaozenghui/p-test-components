@@ -1,5 +1,12 @@
 
 
+## [2.10.1](https://github.com/jiaozenghui/p-test-components/compare/v2.10.0...v2.10.1) (2024-10-20)
+
+
+### Bug Fixes
+
+* build test ([9519c73](https://github.com/jiaozenghui/p-test-components/commit/9519c736904630c4636c110a61dccff01defe1ab))
+
 # [2.10.0](https://github.com/jiaozenghui/p-test-components/compare/v2.9.0...v2.10.0) (2024-10-20)
 
 
