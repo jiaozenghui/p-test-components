@@ -1,6 +1,6 @@
 {
   "name": "p-test-comp",
-  "version": "2.10.1",
+  "version": "2.10.2",
   "private": false,
   "type": "module",
   "main": "dist/p-test-comp.umd.js",
