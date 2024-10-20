@@ -13,7 +13,7 @@ import { nodeResolve } from '@rollup/plugin-node-resolve'
 const name = pkg.name
 const overrides = {
   compilerOptions: { declaration: true, noUnusedLocals: false },
-  exclude: ['tests/**/*.ts', 'tests/**/*.tsx']
+  exclude: ['__tests__/**/*.ts', '__tests__/**/*.tsx']
 }
 const file = (type) => `dist/${name}.${type}.js`
 
