@@ -4,13 +4,13 @@ import { defineConfig } from 'rollup'
 export default defineConfig({
   ...basicConfig,
   output: {
-    name: 'PTestComps',
+    name: 'PTestComp',
     file: file('umd'),
     format: 'umd',
     globals: {
-        vue: 'Vue',
-        'lodash-es': '_'
+      vue: 'Vue',
+      'lodash-es': '_'
     },
     exports: 'named'
-  },
+  }
 })
