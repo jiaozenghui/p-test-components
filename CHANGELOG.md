@@ -1,5 +1,12 @@
 
 
+# [2.11.0](https://github.com/jiaozenghui/p-test-components/compare/v2.10.3...v2.11.0) (2024-11-03)
+
+
+### Features
+
+* change type ([6da51d4](https://github.com/jiaozenghui/p-test-components/commit/6da51d4c965bbe98d46ba1ca197d109c93e4c7f7))
+
 ## [2.10.3](https://github.com/jiaozenghui/p-test-components/compare/v2.10.2...v2.10.3) (2024-10-20)
 
 
