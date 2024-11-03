@@ -2,7 +2,6 @@
   "name": "p-test-comp",
   "version": "2.10.3",
   "private": false,
-  "type": "module",
   "main": "dist/p-test-comp.umd.js",
   "module": "dist/p-test-comp.esm.js",
   "types": "dist/index.d.ts",
