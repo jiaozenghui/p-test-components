@@ -1,4 +1,4 @@
-import { mapValues, without } from 'lodash-es'
+import { mapValues, without } from 'lodash'
 
 declare interface CommonDefaultProps {
   //actions

@@ -1,4 +1,4 @@
-import { pick } from 'lodash-es'
+import { pick } from 'lodash'
 const useComponentCommon = (
   props: any,
   picks: string[]
