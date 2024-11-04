@@ -1,5 +1,12 @@
 
 
+## [2.11.1](https://github.com/jiaozenghui/p-test-components/compare/v2.11.0...v2.11.1) (2024-11-04)
+
+
+### Bug Fixes
+
+* fix commonjs lodash version tag test ([f9ee443](https://github.com/jiaozenghui/p-test-components/commit/f9ee44330b133a7aab5591645fc7d4731aee54da))
+
 # [2.11.0](https://github.com/jiaozenghui/p-test-components/compare/v2.10.3...v2.11.0) (2024-11-03)
 
 
