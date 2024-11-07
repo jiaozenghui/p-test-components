@@ -2,8 +2,8 @@
   "name": "p-test-comp-es",
   "version": "1.1.0",
   "private": false,
-  "main": "dist/p-test-comp.umd.js",
-  "module": "dist/p-test-comp.esm.js",
+  "main": "dist/p-test-comp-es.umd.js",
+  "module": "dist/p-test-comp-es.esm.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "dev": "vite",

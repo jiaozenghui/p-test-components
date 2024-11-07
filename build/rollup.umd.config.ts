@@ -9,7 +9,7 @@ export default defineConfig({
     format: 'umd',
     globals: {
       vue: 'Vue',
-      'lodash': '_'
+      'lodash-es': '_'
     },
     exports: 'named'
   }
