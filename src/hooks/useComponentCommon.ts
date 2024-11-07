@@ -1,4 +1,5 @@
-import pick from 'lodash/pick'
+
+const  pick = require('lodash/pick')
 const useComponentCommon = (
   props: any,
   picks: string[]
