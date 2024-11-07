@@ -1,5 +1,12 @@
 
 
+# [1.3.0](https://github.com/jiaozenghui/p-test-components/compare/v1.2.0...v1.3.0) (2024-11-07)
+
+
+### Features
+
+* lodash optimize板 tag test ([83fb1f8](https://github.com/jiaozenghui/p-test-components/commit/83fb1f80c417e5f6f478b03b3885c3419db75114))
+
 # [1.2.0](https://github.com/jiaozenghui/p-test-components/compare/v1.1.0...v1.2.0) (2024-11-07)
 
 
