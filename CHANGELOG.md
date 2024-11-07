@@ -1,5 +1,7 @@
 
 
+## [2.12.1](https://github.com/jiaozenghui/p-test-components/compare/v2.12.0...v2.12.1) (2024-11-07)
+
 # [2.12.0](https://github.com/jiaozenghui/p-test-components/compare/v2.11.1...v2.12.0) (2024-11-07)
 
 
