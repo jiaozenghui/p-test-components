@@ -1,5 +1,5 @@
-const  mapValues = require('lodash/mapValues')
-const  without = require('lodash/without')
+import {mapValues, without} from 'lodash-es'
+
 
 declare interface CommonDefaultProps {
   //actions
