@@ -36,7 +36,7 @@ export default defineConfig({
       extract: 'css/index.css'
     })
   ],
-  external: ['vue', 'lodash']
+  external: ['vue', 'lodash-es']
   // external:(id)=>{
   //   return /^vue/.test(id)
   // }
