@@ -7,5 +7,4 @@ LShape.install = (app: App) => {
   }
   app.component(LShape.name, LShape)
 }
-
 export default LShape
